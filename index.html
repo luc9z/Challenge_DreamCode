@@ -1,149 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link href="https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135002" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/inter?styles=29139" rel="stylesheet">
-                                              
-    <title>Cadena Dark Theme</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,701,501,401,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Cadena</title>
   </head>
   <body>
-    <header>
-      <img class="headercadena" src="Imagens/Union (1).svg" alt="Teste"/>
-      <div class="container-logo">
-        <div class="logo-imagem"></div>
-        <div class="logo-texto"></div>
+    <header class="topbar">
+      <div class="container-topbar">
+        <div class="content-topbar">
+          <div class="logo">
+            <img
+              src="Imagens/Cadena-desktop-white.svg"
+              alt="Cadena"
+              class="logo-desktop"
+            />
+            <img
+              src="Imagens/Cadena-desktop-black.svg"
+              alt="Cadena"
+              class="logo-desktop-black"
+            />
+            <img
+              src="Imagens/Cadena-mobile-white.svg"
+              alt="Cadena"
+              class="logo-mobile"
+            />
+            <img
+              src="Imagens/Cadena-mobile-black.svg"
+              alt="Cadena"
+              class="logo-mobile-black"
+            />
+          </div>
+
+          <nav class="menu">
+            <a href="#" class="txt-light">Home</a>
+            <a href="#" class="txt-light">Privacy</a>
+            <a href="#" class="txt-light">Terms</a>
+            <img
+              src="Imagens/Menu - mobile.svg"
+              alt="Menu"
+              class="menu-mobile"
+            />
+            <img
+              src="Imagens/Menu-mobile-black.svg"
+              alt="Menu"
+              class="menu-mobile-black"
+            />
+          </nav>
+        </div>
+
+        <body class="dark-mode">
+          <label class="switch">
+            <input type="checkbox" id="toggle" />
+            <span class="slider round"></span>
+          </label>
+        </body>
+
+        <div class="account">
+          <a href="#" class="btn-log-in txt-light txt-small txt-log-in"
+            >Log in</a
+          >
+          <a href="#" class="btn-sign-up btn-white">Sign up</a>
+        </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-        </ul>
-      </div>
-      <div class="font">
-        <span href="#" class="login-link">Log in</span>
-        <span href="#" class="signup-link">Sign Up</span>      
-        <span id="toggletheme" class="login-link">Light Theme</span>
-        <script src="scripts.js"></script>         
-      </div>
-    </div>
     </header>
-    <main>
-      <section>
-          <div class="fraseN">
-            <a href="#" class="new">New!</a>
-            <a href="#" class="get-link">Refer a friend & Get 25%</a>
-            <img src="Imagens/Icon.svg" alt="Teste" />
+
+    <div class="page-wrapper">
+      <section class="full-height" id="first-section">
+        <div class="container-body">
+          <div class="content-body">
+            <div class="content-body-txt">
+              <a href="#" class="btn-body-txt">
+                <div class="btn-fake txt-light txt-smaller">New!</div>
+                <p class="txt-smaller">Refer a friend & Get 25%</p>
+                <img src="Imagens/Arrow.svg" alt="seta" />
+              </a>
+              <h2 class="txt-bigger txt-light">
+                Spend Your
+                <span class="txt-purple">Money in <br />Style</span> with a
+                Customized Card
+              </h2>
+              <p class="txt-light-2 txt-medium support-txt">
+                Use your digital card for online purchases, in-store purchases,
+                and more.
+              </p>
             </div>
-        </div>
-        <div class="textoG">
-          <p>Spend Your<span class = "textoRoxo"> Money in Style </span>with a Customized Card</p>
-        </div>
-        </div>
-        <div>
-          <div>
-            <p class="description">Use your digital card for online purchases, in-store purchases, and more.</p>
-            <div class="imagem01">
-              <img src="Imagens/Frame 68.png" alt="Teste" />
-              <div class="imagem02">
-              <img src="Imagens/Frame 69.png" alt="Teste" />
+            <div class="content-body-cta">
+              <a href="#">
+                <img
+                  src="Imagens/App-store.svg"
+                  class="img-app-store"
+                  alt="Get it on App Store"
+                />
+                <img
+                  src="Imagens/Mobile-only/App-store-mobile.svg"
+                  class="img-app-store-mobile"
+                  alt="Get it on App Store"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="Imagens/Google-play.svg"
+                  class="img-google-play"
+                  alt="Get it on Play Store"
+                />
+                <img
+                  src="Imagens/mobile-only/Google-play-mobile.svg"
+                  class="img-google-play-mobile"
+                  alt="Get it on Play Store"
+                />
+              </a>
             </div>
+          </div>
+
+          <div class="content-body-cards">
+            <div class="cards-general">
+              <img src="Imagens/cards-general-2.svg" alt="Cards" />
+            </div>
+            <div class="body-cards-visa">
+              <img src="Imagens/Visa-logo.svg" alt="Logo Visa" />
+              <h1 class="card-visa-visa">VISA</h1>
+              <p>Mastercard • 9390</p>
+              <h1 class="card-visa-num">$3 520.45</h1>
+              <img
+                class="visa-check"
+                src="Imagens/Check.svg"
+                alt="Check"
+              />
+            </div>
+            <div class="card-big">
+              <img
+                class="card-big-content"
+                src="Imagens/Content-body-big.svg"
+                alt="Conteúdo do cartão"
+              />
+              <p>payment to</p>
+              <img
+                class="card-big-logo"
+                src="Imagens/Logo-black.svg"
+                alt="Logo Cadena"
+              />
+            </div>
+            <div class="card-120">
+              <img src="Imagens/Clock.svg" alt="Ícone relógio" />
+              <h2>$120</h2>
+            </div>
+            <div class="card-pink-card">
+              <img
+                class="card-pink-card-card"
+                src="Imagens/Card.svg"
+                alt="Cartão rosa"
+              />
+              <img
+                class="card-pink-card-check"
+                src="Imagens/Check2.svg"
+                alt="Check"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="social-proof-section">
+          <div class="container-social">
+            <p>Trusted by 3000+ parners & customers</p>
+            <div class="content-social">
+              <img
+                src="Imagens/stripe-capchase.svg.svg"
+                alt="Logo Stripe"
+              />
+              <img
+                src="Imagens/orfium-capchase.svg.svg"
+                alt="Logo Stripe"
+              />
+              <img
+                src="Imagens/kinsta-capchase.svg.svg"
+                alt="Logo Stripe"
+              />
+              <img
+                src="Imagens/bankable-capchase.svg.svg"
+                alt="Logo Stripe"
+              />
+              <img
+                src="Imagens/nowports-capchase.svg.svg"
+                alt="Logo Stripe"
+              />
+            </div>
+          </div>
+
+          <div class="container-social-mobile">
+            <p>Trusted by 3000+ parners & customers</p>
+            <div class="content-social-mobile">
+              <div class="first-line">
+                <img
+                  src="Imagens/stripe-mobile.svg"
+                  alt="Stripe"
+                />
+                <img
+                  src="Imagens/orfium-mobile.svg"
+                  alt="Orfium"
+                />
+                <img
+                  src="Imagens/kinsta-mobile.svg"
+                  alt="Kinsta"
+                />
+              </div>
+              <div class="second-line">
+                <img
+                  src="Imagens/nowports-mobile.svg"
+                  alt="Nowports"
+                />
+                <img
+                  src="Imagens/bankable-mobile.svg"
+                  alt="Bankable"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="imagem">
-        <img src="Imagens/image.png" alt="Teste" />
-      </div>
-      <div class="footer1">
-        <h1>
-          Trusted by 3000+ partners & customers
-        </h1>
-      </div>
-      <div class="patrocinios">
-      <div class="patro1">
-        <img src="Imagens/stripe.svg" alt="stribe">
-      </div>
-      <div class="patro2">
-        <img src="Imagens/orfium.svg" alt="orfium">
-      </div>
-        <div class="patro3">
-        <img src="Imagens/kinsta.svg" alt="kinsta">
-      </div>
-        <div class="patro4">
-        <img src="Imagens/bankable.svg" alt="bankable">
-      </div>
-      <div class="patro5">
-        <img src="Imagens/nowsports.svg" alt="nowsports">
-      </div>
-        </div>
-        <div class="titulo2"> 
-            <p>Flex Your Digital Wealth with<span class = "textoRoxo"> Cadena</span></p> 
-        </div>
-        <div class="boxes">
-          <div class="boxesleft">
-            <div class="box-01">
-              <h1 class="title1"><span class = "textoRoxo">Versatile</span> Use</h1>
-              <h2 class="h2b"> Use your digital card for online purchases, in-store <span class = "textoRoxo2">purchases</span>, and more </h2>
-              <div class="icon1"><img src="Imagens/card (3).png" alt="money-card"></div>
-            </div>
-            
-            <div class="box-02">
-              <h1 class="title2">Accepted<span class = "textoRoxo"> Everywhere</span></h1>
-              <div class="icon2"><img src="Imagens/2icon2parte.svg" alt="visa"></div>
-              <h2 class="h2c"> Use your digital card at any merchant that accepts <span class = "textoRoxo2">Visa or Mastercard.</span></h2>
-            </div>
-              
-            <div class="box-05">
-              <h1 class="title5">Easy<span class = "textoRoxo"> Management</span></h1>
-              <div class="icon5"><img src="Imagens/manage (1).png" alt="visa"></div>
-              <h2 class="h2f">Manage your digital card and transactions easily through our<span class = "textoRoxo2"> user-friendly</span> app.</h2> 
+
+      <!-- <div class="line"></div> -->
+
+      <section class="full-height" id="features-section">
+        <div class="features-main">
+          <div class="features-main-title txt-light">
+            Flex Your Digital Wealth with <span class="txt-purple">Cadena</span>
           </div>
-              
-                
-                <div class="box-04">
-                <h1 class="title4"><span class = "textoRoxo"> Customer</span> Support</h1>
-                <div class="icon4"><img src="Imagens/div.png" alt="notagrande"></div>
-                <h2 class="h2e"> Our team is ready to help you with any<span class = "textoRoxo2"> questions or issues</span> you may have.</h2>
-              </div>
-              </div>
-              <div class="bigbox">
-              <div class="box-03">
-              <h1 class="title3"><span class = "textoRoxo">Effortlesly </span>Spend</h1>
-              <h2 class="h2d"> Our digital card allows you to spend your<span class = "textoRoxo2"> digital assets</span> with ease.</h2>
-              <div class="icon3"><img src="Imagens/spendtest.png" alt="notagrande"></div>
-              </div>
-            </div> 
-              
+          <div class="features-main-box-container-flex">
+            <div class="features-box">
+              <h1 class="txt-light txt-feature-title">
+                <span class="txt-purple">Versatile</span> Use
+              </h1>
+              <p class="txt-feature-text txt-light-2 padding-top-21">
+                Use your digital card for online<br />
+                purchases, in-store <span class="txt-purple">purchases</span>,
+                and<br />
+                more
+              </p>
+              <img
+                src="Imagens/card.png"
+                alt="Dinheiro"
+                class="features-img-1"
+              />
             </div>
+            <div class="features-box">
+              <h1 class="txt-light txt-feature-title-2">
+                Accepted <span class="txt-purple">Everywhere</span>
+              </h1>
+              <p class="txt-feature-text-2 txt-light-2 padding-top-121">
+                Use your digital card at any<br />
+                merchant that accepts
+                <span class="txt-purple"
+                  >Visa or <br />
+                  Mastercard.</span
+                >
+              </p>
+              <img
+                src="Imagens/Mastercard-Grayscale.svg"
+                alt="Mastercard Grayscale"
+                class="features-img-2"
+              />
             </div>
-            <div class="ultimatela">
-            <div class="box">
-              <div class="boxt">
-              <h1>Create Unique Cards in <span class = "textoRoxo"> Style</span></h1>
-              <div class="boxp">
-              <p> Our cards offer more than just attractive design. They also feature instant payment notifications and in-app card security management. Plus, you can start making purchases right away using Google Pay or Apple Pay.</p>
-                <div class="botaof">
-                  <p>Get a Card &emsp;<img src="Imagens/Vector (1).svg" alt="seta"></p>
-                </div>
+            <div class="features-box">
+              <h1 class="txt-light txt-feature-title">
+                Easy <span class="txt-purple">Management</span>
+              </h1>
+              <p class="txt-feature-text txt-light-2 padding-top-123">
+                Manage your digital card and<br />
+                transactions easily, through our <br /><span class="txt-purple"
+                  >user-friendly</span
+                >
+                app.
+              </p>
+              <img
+                src="Imagens/manage.png"
+                alt="Carteira"
+                class="features-img-3"
+              />
             </div>
-              </div>  
-      <div class="boxcard">
-          <img src="Imagens/Group 18942.png" alt="card1">
+            <div class="features-box">
+              <h1 class="txt-light txt-feature-title">
+                <span class="txt-purple">Customer</span> Support
+              </h1>
+              <p class="txt-feature-text txt-light-2 padding-top-123">
+                Our team is ready to help you with<br />
+                any
+                <span class="txt-purple">questions or issues</span>
+                you may<br />
+                have.
+              </p>
+              <img
+                src="Imagens/Foto-suporte.png"
+                alt="Foto Suporte"
+                class="features-img-4"
+              />
             </div>
           </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container-footer">
-        <img class="icons" src="Imagens/Social icons.svg" alt="redes">
-        <img  class="logo" src="Imagens/Union.png" alt="logotipo">
-        <p class="footertext">  Copyright © 2023 cadena. All rights reserved.</p>
-      </div>
-    </footer>
+          <div class="features-main-box-right">
+            <h1 class="txt-feature-title-2 txt-light">
+              <span class="txt-purple">Effortlessly </span>Spend
+            </h1>
+            <p class="txt-feature-text txt-light-2">
+              Our digital card allows you to spend <br />
+              your <span class="txt-purple">digital assets</span>
+              with ease.
+            </p>
+            <img src="Imagens/spend.png" alt="Dinheiro" />
+          </div>
+        </div>
+      </section>
+
+      <section class="full-height" id="last-section">
+        <div class="last-container">
+          <div class="last-content">
+            <h2 class="last-txt-title">
+              Create Unique Cards in <span class="txt-purple">Style</span>
+            </h2>
+            <p class="last-txt txt-medium">
+              Our card offer more than just attractive design. They also feature
+              instant payment notification and in-app card security management.
+              Plus, you can start making purchases right away using Google Pay
+              or Apple Pay.
+            </p>
+            <a href="#" class="btn-white-2 btn-last">
+              <p class="txt-small-2">Get a Card</p>
+              <img src="Imagens/Arrow-2.svg" alt="Seta" />
+              <img src="Imagens/seta-branca.svg" alt="Seta" />
+            </a>
+          </div>
+
+          <img
+            src="Imagens/Group 18942.svg"
+            alt="Cards"
+            class="last-cards"
+          />
+          <img
+            src="Imagens/last-cards-mobile.png"
+            alt="Cards"
+            class="last-cards-mobile"
+          />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container-footer">
+          <img
+            src="Imagens/Social icons.svg"
+            alt="Redes Sociais"
+            class="social-icons"
+          />
+          <img
+            src="Imagens/Social icons-black.svg"
+            alt="Redes Sociais"
+            class="social-icons-black"
+          />
+          <img
+            src="Imagens/Logo-white.svg"
+            alt="Cadena"
+            class="footer-cadena"
+          />
+          <img
+            src="Imagens/Logo-black.svg"
+            alt="Cadena"
+            class="footer-cadena-white"
+          />
+          <p class="copyright-text">
+            Copyright © 2023 cadena. All rights reserved.
+          </p>
+        </div>
+      </footer>
+
+      <footer class="footer-mobile">
+        <img
+          src="Imagens/Cadena-mobile-white.svg"
+          alt="Logo Cadena"
+          class="logo-mobile"
+        />
+        <img
+          src="Imagens/Cadena-mobile-black.svg"
+          alt="Logo Cadena"
+          class="logo-mobile-black"
+        />
+        <div class="footer-content">
+          <div class="line"></div>
+          <img
+            src="Imagens/Social icons.svg"
+            alt="Redes Sociais"
+            class="social-icons-mobile"
+          />
+          <img
+            src="Imagens/Social icons-black.svg"
+            alt="Redes Sociais"
+            class="social-icons-black-mobile"
+          />
+          <p class="copyright-text-mobile">
+            Copyright © 2023 cadena. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
